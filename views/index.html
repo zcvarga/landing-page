@@ -42,7 +42,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">HOME</a>
@@ -52,9 +53,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     {{# cosmic.object.landing-page.metadata.main_nav }}
-                        <li>
-                            <a class="page-scroll" href="#{{ link }}">{{ title }}</a>
-                        </li>
+                    <li>
+                        <a class="page-scroll" href="#{{ link }}">{{ title }}</a>
+                    </li>
                     {{/ cosmic.object.landing-page.metadata.main_nav }}
                 </ul>
             </div>
@@ -63,7 +64,8 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header style="background-image: url({{ cosmic.object.landing-page.metadata.background_pattern.url }}),linear-gradient(to left, #fef7c9, #e17c4d)">
+    <header
+        style="background-image: url({{ cosmic.object.landing-page.metadata.background_pattern.url }}),linear-gradient(to left, #fef7c9, #e17c4d)">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
@@ -102,8 +104,12 @@
                     <h2 class="section-heading">{{ cosmic.object.landing-page.metadata.second_headline }}</h2>
                     <p>{{ cosmic.object.landing-page.metadata.second_subheadline }}</p>
                     <div class="badges">
-                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.google_play_link }}"><img src="img/googlePlay.png" alt=""></a>
-                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.apple_store_link }}"><img src="img/appStore.png" alt=""></a>
+                        <a class="badge-link" target="_blank"
+                            href="{{ cosmic.object.landing-page.metadata.google_play_link }}"><img
+                                src="img/googlePlay.png" alt=""></a>
+                        <a class="badge-link" target="_blank"
+                            href="{{ cosmic.object.landing-page.metadata.apple_store_link }}"><img
+                                src="img/appStore.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -128,7 +134,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="/img/contactPage.png" class="img-responsive" alt=""> </div>
+                                    <img src="/img/Screen1.png" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "landing-page button" to some JavaScript events or just remove it -->
                                 </div>
@@ -140,13 +146,13 @@
                     <div class="container-fluid">
                         <div class="row">
                             {{# cosmic.object.landing-page.metadata.feature_items }}
-                                <div class="col-md-6">
-                                    <div class="feature-item">
-                                        <i class="{{ simple_line_icon }} text-primary"></i>
-                                        <h3>{{ title }}</h3>
-                                        <p class="text-muted">{{ content }}</p>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="{{ simple_line_icon }} text-primary"></i>
+                                    <h3>{{ title }}</h3>
+                                    <p class="text-muted">{{ content }}</p>
                                 </div>
+                            </div>
                             {{/ cosmic.object.landing-page.metadata.feature_items }}
                         </div>
                     </div>
@@ -154,11 +160,13 @@
             </div>
     </section>
 
-    <section class="cta" style="background-image: url({{ cosmic.object.landing-page.metadata.cta_background_image.url }})">
+    <section class="cta"
+        style="background-image: url({{ cosmic.object.landing-page.metadata.cta_background_image.url }})">
         <div class="cta-content">
             <div class="container">
                 <h2>{{ cosmic.object.landing-page.metadata.fourth_headline }}</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">{{ cosmic.object.landing-page.metadata.get_started_cta }}</a>
+                <a href="#contact"
+                    class="btn btn-outline btn-xl page-scroll">{{ cosmic.object.landing-page.metadata.get_started_cta }}</a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -169,13 +177,16 @@
             <div>{{{ cosmic.object.landing-page.metadata.social_copy }}}</div>
             <ul class="list-inline list-social">
                 <li class="social-twitter">
-                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.twitter_link }}"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.twitter_link }}"><i
+                            class="fa fa-twitter"></i></a>
                 </li>
                 <li class="social-facebook">
-                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.facebook_link }}"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.facebook_link }}"><i
+                            class="fa fa-facebook"></i></a>
                 </li>
                 <li class="social-google-plus">
-                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.github_link }}"><i class="fa fa-github"></i></a>
+                    <a target="_blank" href="{{ cosmic.object.landing-page.metadata.github_link }}"><i
+                            class="fa fa-github"></i></a>
                 </li>
             </ul>
         </div>
@@ -186,14 +197,15 @@
             <p>&copy; {{ cosmic.object.landing-page.metadata.copyright }}</p>
             <ul class="list-inline">
                 {{# cosmic.object.landing-page.metadata.footer_nav }}
-                    <li>
-                        <a href="#{{ link }}">{{ title }}</a>
-                    </li>
+                <li>
+                    <a href="#{{ link }}">{{ title }}</a>
+                </li>
                 {{/ cosmic.object.landing-page.metadata.footer_nav }}
             </ul>
             <div class="center-block" style="width: 240px; margin-top: 20px; margin-bottom: 20px;">
                 <a href="https://cosmicjs.com" target="_blank" style="color: #fff; text-decoration: none;">
-                    <img style="float:left;margin-right:15px;position:relative;" src="https://cosmicjs.com/images/logo.svg" width="28" height="28">
+                    <img style="float:left;margin-right:15px;position:relative;"
+                        src="https://cosmicjs.com/images/logo.svg" width="28" height="28">
                     <span class="powered-by" style="top: 3px; position: relative;">Proudly powered by Cosmic JS</span>
                 </a>
             </div>
