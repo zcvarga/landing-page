@@ -45,7 +45,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{ cosmic.object.landing-page.metadata.nav_title }}</a>
+                <a class="navbar-brand page-scroll" href="#page-top">HOME</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,7 +63,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header style="background-image: url({{ cosmic.object.landing-page.metadata.background_pattern.url }}),linear-gradient(to left,{{ cosmic.object.landing-page.metadata.background_gradient_start }},{{ cosmic.object.landing-page.metadata.background_gradient_end }})">
+    <header style="background-image: url({{ cosmic.object.landing-page.metadata.background_pattern.url }}),linear-gradient(to left, #fef7c9, #e17c4d)">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
@@ -82,7 +82,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="{{ cosmic.object.landing-page.metadata.screenshot.url }}" class="img-responsive" alt="">
+                                    <img src="/img/loading-screen.png" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "landing-page button" to some JavaScript events or just remove it -->
@@ -102,8 +102,8 @@
                     <h2 class="section-heading">{{ cosmic.object.landing-page.metadata.second_headline }}</h2>
                     <p>{{ cosmic.object.landing-page.metadata.second_subheadline }}</p>
                     <div class="badges">
-                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.google_play_link }}"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.apple_store_link }}"><img src="img/app-store-badge.svg" alt=""></a>
+                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.google_play_link }}"><img src="img/googlePlay.png" alt=""></a>
+                        <a class="badge-link" target="_blank" href="{{ cosmic.object.landing-page.metadata.apple_store_link }}"><img src="img/appStore.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="{{ cosmic.object.landing-page.metadata.screenshot.url }}" class="img-responsive" alt=""> </div>
+                                    <img src="/img/contactPage.png" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "landing-page button" to some JavaScript events or just remove it -->
                                 </div>
